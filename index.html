@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Codificador de mensagens</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <form>
+        <div class="container"><h1>Codifique ou descodifique mensagens</h1></div>
+        <section class="tipos">
+            <select name="selecione" id="selecione">
+                <option value="metodo" disabled selected>Escolha o tipo de Cifra</option>
+                <option value="caesar">Cifra de Caesar</option>
+                <option value="base64">Base 64</option>
+            </select>
+
+
+            <input class="ocultarIncremento" id="ocultarIncremento" type="number"
+                placeholder="Digite a chave em números">
+
+            <div class="metodo">
+                <input checked type="radio" id="codificar" name="escolhaDeMetodo" value="codificar">
+                <label for="escolhaDeMetodo">Codificar</label>
+            </div>
+
+            <div class="metodo">
+                <input type="radio" id="decodificar" name="escolhaDeMetodo">
+                <label for="escolhaDeMetodo">Decodificar</label>
+            </div>
+
+        </section>
+
+        <section class="mensagem-usuario">
+            
+            <textarea class="texto" id="escrever" name="texto-usuario" placeholder="Digite aqui" rows="10"
+                cols="33"></textarea>
+
+            <textarea class="texto" id="resultado" name="texto-usuario" rows="10" cols="33" readonly></textarea>
+        
+        </section>
+        <div class="container"><button type="button" id="botao">Ativar</button></div>
+    </form>
+
+        <footer>
+
+            <div>
+                <a href="https://linkedin.com/in/enrickmagalhaes/"><img class="icon" src="imagens/linkedin-icon.png" width="35" height="35"></a>
+                <a href="https://github.com/enrickm"><img class="icon" src="imagens/github-icon.png" width="35" height="35"></a>
+                <a href="https://behance.net/enrick"><img class="icon" src="imagens/behance-icon.png" width="35" height="35"></a>
+                <a href="https://instagram.com/enrickmagalhaes"><img class="icon" src="imagens/instagram-icon.png" width="35" height="35"></a>
+            </div>
+    
+            <div>
+                <p class="rodape"><a href="https://www.linkedin.com/in/enrickmagalhaes/"><strong>Enrick Magalhães</strong></a> ©Copyright 2022</p>
+            </div>
+    
+        </footer>
+
+    </div>
+    
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,180 @@
+body{   
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 300%, 300%;
+    animation: color 10s ease infinite;
+    font-family: 'Verdana';
+    display: flex;
+    align-items:column;
+}
+
+@keyframes color {
+    0% {
+        background-position: 0% 50%;
+      }
+    50% {
+        background-position: 100% 50%;
+     }
+    100% {
+        background-position: 0%,50%
+    }
+}
+
+h1{
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+footer{
+    text-align: center;
+    background: white;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-weight: bold;  
+}
+
+a {
+    text-decoration: none;
+    background: white;
+    color: orangered;
+}
+
+#selecione{
+    margin: 10px;
+    width: 15%;
+    border-radius: 5px;
+    border-color: transparent;
+}
+
+#ocultarIncremento{
+    margin: 10px;
+    width: 200px;
+    display: none;
+}
+
+#botao{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    width: 25%;
+    border-color:transparent;
+    border-radius: 5px;
+    padding: 10px 0px;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 40px 15px;
+    text-transform: uppercase;
+    background:white;
+    font-weight: bold;
+}
+
+#botao:hover{
+    border-color: white;
+    border-width: 2px;
+    border-style: solid;
+    color: white;
+    background: orangered;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 100%;
+    padding: 30px 0px 0px 0px;
+}
+
+.tipos{
+    display: flex;
+    align-items:center;
+    margin-top: 3%;
+    background: rgba(255,255,255,0.2);
+    width: 100%;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.metodo{
+    margin: 10px 20px;
+}
+
+.icon{
+    margin: 5px;
+    text-decoration: none;
+}
+
+.mensagem-usuario{
+    display: flex;
+    width: 100%;
+}
+
+.texto{
+    resize: none;
+    font-size: 15px;
+    margin: 25px 25px;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+}
+
+@media(max-width:700px){
+
+    body {
+        margin: 80px 0 0;
+    }
+    
+    h1{
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-around;
+        width: 90%;
+        margin: 15px;
+        font-size: 13px;    
+    }
+    
+    .tipos {
+         margin: 5%;
+     }
+
+     #selecione {
+         margin: 15px 5px 5px;
+         width: 95%;
+     }
+
+     .metodo {
+        margin: 4px 5px 10px;
+        font-size: 14px;
+        text-align: center;
+     }
+    
+    #botao {
+        width: auto;
+        font-size: 14px;
+    }
+
+    footer{
+        font-size: 12px;
+        width: 100%;
+        margin-bottom:30px;
+    }
+
+    .icon {
+        width: 15px;
+        height: 15px;
+    }  
+}
+
+@media(min-width:700px){
+    body {
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+}
